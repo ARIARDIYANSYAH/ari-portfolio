@@ -1,451 +1,198 @@
 ```html
-<!DOCTYPE html>
-<html lang="id">
-
-<head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Ari Ardiyansyah | General Affair Portfolio</title>
-
-<meta name="description" content="Portfolio profesional Ari Ardiyansyah - General Affair Staff dengan pengalaman dalam facility management, administration, vendor coordination dan operational support. Lulusan Teknik Informatika Universitas Pamulang.">
-
-<meta name="keywords" content="Ari Ardiyansyah, General Affair, Portfolio Ari Ardiyansyah, Universitas Pamulang, Administration, Facility Management">
-
-<meta name="author" content="Ari Ardiyansyah">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-scroll-behavior:smooth;
-}
-
-body{
-background:#0f172a;
-color:white;
-}
-
-/* LOADER */
-
-#loader{
-position:fixed;
-width:100%;
-height:100%;
-background:#020617;
-display:flex;
-align-items:center;
-justify-content:center;
-z-index:999;
-}
-
-.loader-circle{
-width:50px;
-height:50px;
-border:5px solid #1e293b;
-border-top:5px solid #3b82f6;
-border-radius:50%;
-animation:spin 1s linear infinite;
-}
-
-@keyframes spin{
-100%{transform:rotate(360deg);}
-}
-
-/* NAVBAR */
-
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 40px;
-background:#020617;
-position:sticky;
-top:0;
-z-index:100;
-}
-
-.logo{
-font-weight:600;
-font-size:20px;
-}
-
-.nav-links{
-display:flex;
-gap:30px;
-}
-
-.nav-links a{
-color:white;
-text-decoration:none;
-font-weight:500;
-}
-
-.hamburger{
-display:none;
-font-size:28px;
-cursor:pointer;
-}
-
-/* HERO */
-
-.hero{
-height:90vh;
-display:flex;
-flex-direction:column;
-align-items:center;
-justify-content:center;
-text-align:center;
-padding:20px;
-}
-
-.hero img{
-width:170px;
-border-radius:50%;
-border:5px solid #3b82f6;
-margin-bottom:20px;
-box-shadow:0 20px 50px rgba(0,0,0,0.5);
-}
-
-.hero h1{
-font-size:46px;
-}
-
-.hero p{
-max-width:700px;
-margin-top:10px;
-opacity:0.85;
-}
-
-.btn{
-margin-top:25px;
-padding:12px 22px;
-background:#3b82f6;
-border-radius:6px;
-color:white;
-text-decoration:none;
-}
-
-/* SECTION */
-
-section{
-max-width:1100px;
-margin:auto;
-padding:80px 20px;
-}
-
-/* CARD */
-
-.card{
-background:#1e293b;
-padding:25px;
-border-radius:12px;
-margin-bottom:20px;
-line-height:1.7;
-}
-
-/* SKILLS */
-
-.skill{
-margin-bottom:18px;
-}
-
-.skill-bar{
-height:10px;
-background:#334155;
-border-radius:5px;
-margin-top:5px;
-}
-
-.skill-fill{
-height:10px;
-background:#3b82f6;
-border-radius:5px;
-}
-
-/* EXPERIENCE */
-
-.timeline{
-border-left:3px solid #3b82f6;
-padding-left:20px;
-}
-
-.timeline-item{
-margin-bottom:40px;
-position:relative;
-}
-
-.timeline-item::before{
-content:'';
-position:absolute;
-left:-11px;
-top:5px;
-width:15px;
-height:15px;
-background:#3b82f6;
-border-radius:50%;
-}
-
-.company{
-display:flex;
-align-items:center;
-gap:10px;
-margin-bottom:8px;
-}
-
-.company img{
-width:32px;
-}
-
-/* WHATSAPP */
-
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-padding:15px 18px;
-border-radius:50px;
-color:white;
-text-decoration:none;
-font-weight:bold;
-}
-
-/* FOOTER */
-
-footer{
-text-align:center;
-padding:30px;
-background:#020617;
-margin-top:40px;
-}
-
-/* MOBILE */
-
-@media(max-width:768px){
-
-.nav-links{
-display:none;
-flex-direction:column;
-background:#020617;
-position:absolute;
-top:70px;
-left:0;
-width:100%;
-padding:20px;
-}
-
-.nav-links.show{
-display:flex;
-}
-
-.hamburger{
-display:block;
-}
-
-.hero h1{
-font-size:30px;
-}
-
-.hero img{
-width:140px;
-}
-
-}
-
-</style>
-
-</head>
-
-<body>
-
-<div id="loader">
-<div class="loader-circle"></div>
-</div>
-
-<nav>
-
-<div class="logo">Ari Ardiyansyah</div>
-
-<div class="nav-links" id="navLinks">
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#experience">Experience</a>
-<a href="#education">Education</a>
-<a href="#contact">Contact</a>
-</div>
-
-<div class="hamburger" onclick="toggleMenu()">☰</div>
-
-</nav>
-
-<section class="hero">
-
-<img src="profile.jpg">
-
-<h1>Ari Ardiyansyah</h1>
-
-<p>
-General Affair professional with experience in administration, facility management, vendor coordination and operational support across multiple industries.
-</p>
-
-<a class="btn" href="CV_Ari_Ardiyansyah.pdf" download>Download CV</a>
-
-</section>
-
-<section id="about">
-
-<h2>Professional Summary</h2>
-
-<div class="card">
-
-<p>
-Saya adalah profesional dengan latar belakang pendidikan Sarjana Teknik Informatika dari Universitas Pamulang yang memiliki pengalaman kerja di berbagai sektor industri seperti pendidikan, manufaktur, retail dan operasional perusahaan.
-</p>
-
-<p>
-Saat ini saya bekerja sebagai General Affair Staff yang bertanggung jawab dalam pengelolaan fasilitas kantor, koordinasi vendor, pengadaan barang dan jasa serta memastikan kegiatan operasional perusahaan berjalan dengan lancar.
-</p>
-
-<p>
-Saya memiliki pengalaman dalam pengelolaan administrasi operasional, pengelolaan aset perusahaan, pengarsipan dokumen serta mendukung berbagai kegiatan operasional perusahaan agar berjalan secara efektif dan efisien.
-</p>
-
-</div>
-
-</section>
-
-<section id="skills">
-
-<h2>Professional Skills</h2>
-
-<div class="skill">
-Microsoft Office
-<div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
-</div>
-
-<div class="skill">
-Administration
-<div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
-</div>
-
-<div class="skill">
-Facility Management
-<div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
-</div>
-
-</section>
-
 <section id="experience">
 
-<h2>Work Experience</h2>
+<h2>Professional Experience</h2>
 
 <div class="timeline">
 
-<div class="timeline-item">
-
-<div class="company">
-<img src="https://logo.clearbit.com/unitamasarimas.com">
-<b>PT Unitama Sari Mas</b>
-</div>
-
-<p>General Affair Staff (2024 - Present)</p>
-
-</div>
+<!-- PLAZA AUTO PRIMA -->
 
 <div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="timeline-content">
 
-<div class="company">
-<img src="https://logo.clearbit.com/suparma.co.id">
-<b>PT Suparma Tbk</b>
+<h3>PT Plaza Auto Prima (Plaza Toyota)</h3>
+<p><b>Junior Mechanical Engineer</b></p>
+<p>Sep 2015 – Dec 2015</p>
+
+<p>
+PT Plaza Auto Prima merupakan dealer resmi Toyota yang bergerak di bidang penjualan dan pelayanan otomotif dengan beberapa cabang di wilayah Jakarta, Tangerang, Bogor dan Bandung.
+</p>
+
+<ul>
+<li>Melakukan pengecekan menyeluruh terhadap komponen kendaraan.</li>
+<li>Menganalisa letak kerusakan pada kendaraan.</li>
+<li>Membuat rincian estimasi biaya perbaikan kendaraan.</li>
+<li>Mengontrol kondisi komponen pada bagian mesin kendaraan.</li>
+<li>Melakukan perbaikan pada komponen kendaraan yang mengalami kerusakan.</li>
+</ul>
+
+</div>
 </div>
 
-<p>Admin Sales Order (2023)</p>
-
-</div>
+<!-- ROTUA GEMILANG -->
 
 <div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="timeline-content">
 
-<div class="company">
-<img src="https://logo.clearbit.com/foodstation.co.id">
-<b>PT Food Station Tjipinang Jaya</b>
+<h3>PT. Pumas Rotua Gemilang </h3>
+<p><b>Machine Operator</b></p>
+<p>Mar 2017 – Apr 2017</p>
+
+<p>
+PT Ratoa Gemilang merupakan perusahaan manufaktur yang bergerak dalam pengolahan bahan baku karet menjadi produk jadi seperti tali sandal dan alas kaki.
+</p>
+
+<ul>
+<li>Memasukkan bahan mentah berupa karet ke dalam mesin press.</li>
+<li>Mengoperasikan mesin produksi untuk proses pengolahan bahan.</li>
+<li>Melakukan perbaikan kecil pada mesin produksi.</li>
+<li>Mengganti suku cadang mesin yang mengalami kerusakan.</li>
+<li>Melakukan pengujian hasil produksi sebelum diproses lebih lanjut.</li>
+</ul>
+
+</div>
 </div>
 
-<p>Business Development Project (2023)</p>
-
-</div>
+<!-- TRANS RETAIL -->
 
 <div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="timeline-content">
 
-<div class="company">
-<img src="https://logo.clearbit.com/bharatrikora.sch.id">
-<b>Yayasan Bhara Trikora</b>
+<h3>PT Trans Retail Indonesia</h3>
+<p><b>Cashier</b></p>
+<p>Jul 2017 – Nov 2017</p>
+
+<p>
+PT Trans Retail Indonesia merupakan perusahaan ritel modern multi format di Indonesia yang berada di bawah Trans Corporation.
+</p>
+
+<ul>
+<li>Menerima pembayaran dari pelanggan.</li>
+<li>Mengurus dan mencetak struk pembayaran.</li>
+<li>Membungkus barang belanjaan pelanggan.</li>
+<li>Memastikan transaksi pembayaran berjalan dengan baik.</li>
+<li>Memproses transaksi menggunakan e-money, kartu kredit, kartu debit dan uang tunai.</li>
+</ul>
+
+</div>
 </div>
 
-<p>Teacher & Technician (2018 - 2023)</p>
+<!-- BHARA TRIKORA -->
 
+<div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="timeline-content">
+
+<h3>Yayasan Bhara Trikora</h3>
+<p><b>Guru, Wali Kelas, Pembina OSIS, Staff Kepala Jurusan, Teknisi Gedung & Listrik</b></p>
+<p>Aug 2018 – Jan 2023</p>
+
+<p>
+Yayasan Bhara Trikora merupakan lembaga pendidikan yang berfokus pada pengembangan pendidikan dan keterampilan siswa di Jakarta Barat.
+</p>
+
+<ul>
+<li>Merencanakan, mempersiapkan dan menyampaikan kegiatan belajar mengajar di kelas.</li>
+<li>Mencatat, menilai dan melaporkan perkembangan siswa.</li>
+<li>Membuat rencana pembelajaran dan evaluasi kegiatan belajar.</li>
+<li>Memantau hasil pembelajaran siswa dan menyiapkan kegiatan pendukung pembelajaran.</li>
+<li>Melakukan survey harga kebutuhan bahan praktik.</li>
+<li>Menyusun proposal pengajuan kebutuhan bahan praktik.</li>
+<li>Melakukan negosiasi harga kebutuhan bahan praktik.</li>
+<li>Membuat laporan pertanggungjawaban anggaran.</li>
+<li>Melakukan perawatan laboratorium komputer dan laboratorium otomotif.</li>
+<li>Melakukan perawatan gedung sekolah dan instalasi kelistrikan.</li>
+<li>Melakukan perawatan alat peraga praktik siswa seperti mesin otomotif.</li>
+<li>Mendesain banner dan poster kegiatan sekolah.</li>
+<li>Mengelola media sosial sekolah.</li>
+</ul>
+
+</div>
+</div>
+
+<!-- FOOD STATION -->
+
+<div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="timeline-content">
+
+<h3>PT Food Station Tjipinang Jaya</h3>
+<p><b>Business Development Project</b></p>
+<p>Jan 2023 – Aug 2023</p>
+
+<p>
+PT Food Station Tjipinang Jaya merupakan perusahaan yang bergerak dalam distribusi, penjualan dan pengelolaan logistik bahan pangan terutama beras di wilayah DKI Jakarta.
+</p>
+
+<ul>
+<li>Mengkoordinir dan mengawasi tenaga kerja atau pihak ketiga.</li>
+<li>Memastikan ketersediaan bahan agar rencana kerja harian berjalan dengan lancar.</li>
+<li>Membuat dokumen surat keluar masuk barang.</li>
+<li>Melakukan stock opname atau stock take secara berkala.</li>
+<li>Melakukan pengarsipan dokumen administrasi.</li>
+</ul>
+
+</div>
+</div>
+
+<!-- SUPARMA -->
+
+<div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="timeline-content">
+
+<h3>PT Suparma Tbk</h3>
+<p><b>Admin Sales Order</b></p>
+<p>Sep 2023 – Dec 2023</p>
+
+<p>
+PT Suparma Tbk merupakan perusahaan industri kertas yang memproduksi berbagai jenis kertas industri dan produk konsumen seperti tissue dan kertas kemasan.
+</p>
+
+<ul>
+<li>Menerima dan memproses pesanan pelanggan.</li>
+<li>Memastikan kelengkapan data pesanan yang masuk.</li>
+<li>Menyediakan dukungan administratif untuk tim penjualan.</li>
+<li>Berkoordinasi dengan tim sales, tim produksi dan departemen lain.</li>
+<li>Mengelola dokumen penjualan dan administrasi secara terorganisir.</li>
+</ul>
+
+</div>
+</div>
+
+<!-- UNITAMA -->
+
+<div class="timeline-item">
+<div class="timeline-dot"></div>
+<div class="timeline-content">
+
+<h3>PT Unitama Sari Mas</h3>
+<p><b>General Affair Staff</b></p>
+<p>Mar 2024 – Present</p>
+
+<p>
+PT Unitama Sari Mas merupakan perusahaan yang memproduksi produk kebutuhan rumah tangga seperti kapur barus dan pengharum ruangan dengan brand Dahlia, Seagull dan Minie Puff.
+</p>
+
+<ul>
+<li>Membuat daftar vendor yang bekerja sama dengan perusahaan.</li>
+<li>Mengontrol pekerjaan cleaning service (OB, OG dan receptionist).</li>
+<li>Membuat laporan pengadaan barang dan jasa secara efektif dan efisien.</li>
+<li>Memastikan kebersihan lingkungan kerja seperti ruang kerja, lobby dan area perusahaan.</li>
+<li>Memastikan perawatan dan pemeliharaan kendaraan operasional berjalan dengan baik.</li>
+<li>Melakukan monitoring penggunaan kendaraan operasional dan ruang rapat.</li>
+<li>Melakukan koordinasi dengan departemen terkait dalam perbaikan fasilitas perusahaan.</li>
+<li>Mengusulkan pengadaan perbaikan gedung dan kebutuhan rumah tangga perusahaan.</li>
+<li>Berkordinasi dengan tim security dalam pelaksanaan sistem keamanan perusahaan.</li>
+</ul>
+
+</div>
 </div>
 
 </div>
 
 </section>
-
-<section id="education">
-
-<h2>Education</h2>
-
-<div class="card">
-
-<p><b>Universitas Pamulang</b></p>
-
-<p>S1 Teknik Informatika</p>
-
-<p>GPA : 3.18</p>
-
-</div>
-
-</section>
-
-<section id="contact">
-
-<h2>Contact</h2>
-
-<div class="card">
-
-<p>Phone : 0882-1169-9767</p>
-<p>Email : ariardiansyah34@gmail.com</p>
-<p>LinkedIn : linkedin.com/in/ari-ardiyansyah</p>
-
-</div>
-
-</section>
-
-<footer>
-
-<p>© 2026 Ari Ardiyansyah Portfolio</p>
-
-</footer>
-
-<a class="whatsapp" href="https://wa.me/6288211699767">WhatsApp</a>
-
-<script>
-
-function toggleMenu(){
-document.getElementById("navLinks").classList.toggle("show");
-}
-
-window.onload=function(){
-document.getElementById("loader").style.display="none";
-}
-
-</script>
-
-</body>
-</html>
 ```
