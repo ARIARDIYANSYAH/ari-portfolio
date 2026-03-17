@@ -1,198 +1,111 @@
-```html
-<section id="experience">
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ari Ardiyansyah Portfolio</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#0f172a;color:#fff}
+header{padding:40px;text-align:center;background:linear-gradient(135deg,#2563eb,#0f172a)}
+header img{width:160px;border-radius:50%;border:4px solid white}
+nav{display:flex;gap:20px;justify-content:center;background:#020617;padding:15px;position:sticky;top:0}
+nav a{color:white;text-decoration:none;font-weight:bold}
+section{padding:60px 20px;max-width:1000px;margin:auto}
+.card{background:#1e293b;padding:20px;border-radius:10px;margin:15px 0}
+.skills span{display:inline-block;background:#2563eb;padding:8px 12px;margin:6px;border-radius:6px}
+.gallery a{display:block;background:#1e293b;padding:15px;margin:10px 0;border-radius:8px;text-decoration:none;color:white}
+footer{text-align:center;padding:30px;background:#020617}
+button{padding:10px 18px;border:none;border-radius:6px;background:#2563eb;color:white;font-size:16px}
+</style>
+</head>
+<body>
 
-<h2>Professional Experience</h2>
+<header>
+<img src="profile.jpg" alt="Ari Ardiyansyah">
+<h1>Ari Ardiyansyah</h1>
+<p>General Affair Staff | Administration | Technical Support</p>
+<a href="#contact"><button>Contact Me</button></a>
+</header>
 
-<div class="timeline">
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#experience">Experience</a>
+<a href="#education">Education</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#contact">Contact</a>
+</nav>
 
-<!-- PLAZA AUTO PRIMA -->
-
-<div class="timeline-item">
-<div class="timeline-dot"></div>
-<div class="timeline-content">
-
-<h3>PT Plaza Auto Prima (Plaza Toyota)</h3>
-<p><b>Junior Mechanical Engineer</b></p>
-<p>Sep 2015 – Dec 2015</p>
-
-<p>
-PT Plaza Auto Prima merupakan dealer resmi Toyota yang bergerak di bidang penjualan dan pelayanan otomotif dengan beberapa cabang di wilayah Jakarta, Tangerang, Bogor dan Bandung.
-</p>
-
-<ul>
-<li>Melakukan pengecekan menyeluruh terhadap komponen kendaraan.</li>
-<li>Menganalisa letak kerusakan pada kendaraan.</li>
-<li>Membuat rincian estimasi biaya perbaikan kendaraan.</li>
-<li>Mengontrol kondisi komponen pada bagian mesin kendaraan.</li>
-<li>Melakukan perbaikan pada komponen kendaraan yang mengalami kerusakan.</li>
-</ul>
-
+<section id="about">
+<h2>About Me</h2>
+<div class="card">
+<p>Profesional dengan pengalaman lintas industri mulai dari otomotif, manufaktur, retail, pendidikan, hingga administrasi operasional. Terbiasa menangani pengelolaan fasilitas, koordinasi vendor, administrasi dokumen, serta maintenance gedung dan operasional.</p>
 </div>
-</div>
-
-<!-- ROTUA GEMILANG -->
-
-<div class="timeline-item">
-<div class="timeline-dot"></div>
-<div class="timeline-content">
-
-<h3>PT. Pumas Rotua Gemilang </h3>
-<p><b>Machine Operator</b></p>
-<p>Mar 2017 – Apr 2017</p>
-
-<p>
-PT Ratoa Gemilang merupakan perusahaan manufaktur yang bergerak dalam pengolahan bahan baku karet menjadi produk jadi seperti tali sandal dan alas kaki.
-</p>
-
-<ul>
-<li>Memasukkan bahan mentah berupa karet ke dalam mesin press.</li>
-<li>Mengoperasikan mesin produksi untuk proses pengolahan bahan.</li>
-<li>Melakukan perbaikan kecil pada mesin produksi.</li>
-<li>Mengganti suku cadang mesin yang mengalami kerusakan.</li>
-<li>Melakukan pengujian hasil produksi sebelum diproses lebih lanjut.</li>
-</ul>
-
-</div>
-</div>
-
-<!-- TRANS RETAIL -->
-
-<div class="timeline-item">
-<div class="timeline-dot"></div>
-<div class="timeline-content">
-
-<h3>PT Trans Retail Indonesia</h3>
-<p><b>Cashier</b></p>
-<p>Jul 2017 – Nov 2017</p>
-
-<p>
-PT Trans Retail Indonesia merupakan perusahaan ritel modern multi format di Indonesia yang berada di bawah Trans Corporation.
-</p>
-
-<ul>
-<li>Menerima pembayaran dari pelanggan.</li>
-<li>Mengurus dan mencetak struk pembayaran.</li>
-<li>Membungkus barang belanjaan pelanggan.</li>
-<li>Memastikan transaksi pembayaran berjalan dengan baik.</li>
-<li>Memproses transaksi menggunakan e-money, kartu kredit, kartu debit dan uang tunai.</li>
-</ul>
-
-</div>
-</div>
-
-<!-- BHARA TRIKORA -->
-
-<div class="timeline-item">
-<div class="timeline-dot"></div>
-<div class="timeline-content">
-
-<h3>Yayasan Bhara Trikora</h3>
-<p><b>Guru, Wali Kelas, Pembina OSIS, Staff Kepala Jurusan, Teknisi Gedung & Listrik</b></p>
-<p>Aug 2018 – Jan 2023</p>
-
-<p>
-Yayasan Bhara Trikora merupakan lembaga pendidikan yang berfokus pada pengembangan pendidikan dan keterampilan siswa di Jakarta Barat.
-</p>
-
-<ul>
-<li>Merencanakan, mempersiapkan dan menyampaikan kegiatan belajar mengajar di kelas.</li>
-<li>Mencatat, menilai dan melaporkan perkembangan siswa.</li>
-<li>Membuat rencana pembelajaran dan evaluasi kegiatan belajar.</li>
-<li>Memantau hasil pembelajaran siswa dan menyiapkan kegiatan pendukung pembelajaran.</li>
-<li>Melakukan survey harga kebutuhan bahan praktik.</li>
-<li>Menyusun proposal pengajuan kebutuhan bahan praktik.</li>
-<li>Melakukan negosiasi harga kebutuhan bahan praktik.</li>
-<li>Membuat laporan pertanggungjawaban anggaran.</li>
-<li>Melakukan perawatan laboratorium komputer dan laboratorium otomotif.</li>
-<li>Melakukan perawatan gedung sekolah dan instalasi kelistrikan.</li>
-<li>Melakukan perawatan alat peraga praktik siswa seperti mesin otomotif.</li>
-<li>Mendesain banner dan poster kegiatan sekolah.</li>
-<li>Mengelola media sosial sekolah.</li>
-</ul>
-
-</div>
-</div>
-
-<!-- FOOD STATION -->
-
-<div class="timeline-item">
-<div class="timeline-dot"></div>
-<div class="timeline-content">
-
-<h3>PT Food Station Tjipinang Jaya</h3>
-<p><b>Business Development Project</b></p>
-<p>Jan 2023 – Aug 2023</p>
-
-<p>
-PT Food Station Tjipinang Jaya merupakan perusahaan yang bergerak dalam distribusi, penjualan dan pengelolaan logistik bahan pangan terutama beras di wilayah DKI Jakarta.
-</p>
-
-<ul>
-<li>Mengkoordinir dan mengawasi tenaga kerja atau pihak ketiga.</li>
-<li>Memastikan ketersediaan bahan agar rencana kerja harian berjalan dengan lancar.</li>
-<li>Membuat dokumen surat keluar masuk barang.</li>
-<li>Melakukan stock opname atau stock take secara berkala.</li>
-<li>Melakukan pengarsipan dokumen administrasi.</li>
-</ul>
-
-</div>
-</div>
-
-<!-- SUPARMA -->
-
-<div class="timeline-item">
-<div class="timeline-dot"></div>
-<div class="timeline-content">
-
-<h3>PT Suparma Tbk</h3>
-<p><b>Admin Sales Order</b></p>
-<p>Sep 2023 – Dec 2023</p>
-
-<p>
-PT Suparma Tbk merupakan perusahaan industri kertas yang memproduksi berbagai jenis kertas industri dan produk konsumen seperti tissue dan kertas kemasan.
-</p>
-
-<ul>
-<li>Menerima dan memproses pesanan pelanggan.</li>
-<li>Memastikan kelengkapan data pesanan yang masuk.</li>
-<li>Menyediakan dukungan administratif untuk tim penjualan.</li>
-<li>Berkoordinasi dengan tim sales, tim produksi dan departemen lain.</li>
-<li>Mengelola dokumen penjualan dan administrasi secara terorganisir.</li>
-</ul>
-
-</div>
-</div>
-
-<!-- UNITAMA -->
-
-<div class="timeline-item">
-<div class="timeline-dot"></div>
-<div class="timeline-content">
-
-<h3>PT Unitama Sari Mas</h3>
-<p><b>General Affair Staff</b></p>
-<p>Mar 2024 – Present</p>
-
-<p>
-PT Unitama Sari Mas merupakan perusahaan yang memproduksi produk kebutuhan rumah tangga seperti kapur barus dan pengharum ruangan dengan brand Dahlia, Seagull dan Minie Puff.
-</p>
-
-<ul>
-<li>Membuat daftar vendor yang bekerja sama dengan perusahaan.</li>
-<li>Mengontrol pekerjaan cleaning service (OB, OG dan receptionist).</li>
-<li>Membuat laporan pengadaan barang dan jasa secara efektif dan efisien.</li>
-<li>Memastikan kebersihan lingkungan kerja seperti ruang kerja, lobby dan area perusahaan.</li>
-<li>Memastikan perawatan dan pemeliharaan kendaraan operasional berjalan dengan baik.</li>
-<li>Melakukan monitoring penggunaan kendaraan operasional dan ruang rapat.</li>
-<li>Melakukan koordinasi dengan departemen terkait dalam perbaikan fasilitas perusahaan.</li>
-<li>Mengusulkan pengadaan perbaikan gedung dan kebutuhan rumah tangga perusahaan.</li>
-<li>Berkordinasi dengan tim security dalam pelaksanaan sistem keamanan perusahaan.</li>
-</ul>
-
-</div>
-</div>
-
-</div>
-
 </section>
-```
+
+<section id="skills">
+<h2>Skills</h2>
+<div class="skills">
+<span>Microsoft Office</span>
+<span>Adobe Photoshop</span>
+<span>Administration</span>
+<span>Vendor Management</span>
+<span>Facility Maintenance</span>
+<span>Electrical</span>
+<span>Leadership</span>
+<span>Communication</span>
+</div>
+</section>
+
+<section id="experience">
+<h2>Work Experience</h2>
+<div class="card">
+<h3>PT Unitama Sari Mas</h3>
+<p>General Affair  (2024 - Present)</p>
+</div>
+<div class="card">
+<h3>PT Suparma Tbk</h3>
+<p>Admin Sales Order (2023)</p>
+</div>
+<div class="card">
+<h3>PT Food Station Tjipinang Jaya</h3>
+<p>Business Development Project (2023)</p>
+</div>
+<div class="card">
+<h3>Yayasan Bhara Trikora</h3>
+<p>Teacher & Technician (2018 - 2023)</p>
+</div>
+</section>
+
+<section id="education">
+<h2>Education</h2>
+<div class="card">
+<p>S1 Teknik Informatika - Universitas Pamulang</p>
+<p>GPA: 3.18</p>
+</div>
+</section>
+
+<section id="portfolio">
+<h2>Portfolio & Project Files</h2>
+<p>Semua file project dapat dilihat di Google Drive berikut:</p>
+
+<div class="gallery">
+<a href="https://drive.google.com/drive/folders/11MqAFFSnsbs7M7uuakKhTTtuAQKbSTOO" target="_blank">Open Portfolio Folder</a>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<div class="card">
+<p>Phone: 0882-1169-9767</p>
+<p>Email: ariardiansyah34@gmail.com</p>
+<p>LinkedIn: https://www.linkedin.com/in/ari-ardiyansyah-s-kom-9152b51a0/</p>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Ari Ardiyansyah Portfolio</p>
+</footer>
+
+</body>
+</html>
