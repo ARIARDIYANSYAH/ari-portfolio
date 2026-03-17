@@ -44,6 +44,21 @@ font-size:38px;
 margin-top:15px;
 }
 
+header p{
+opacity:0.8;
+margin-top:10px;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 18px;
+background:#2563eb;
+border-radius:6px;
+text-decoration:none;
+color:white;
+}
+
 nav{
 display:flex;
 justify-content:center;
@@ -74,16 +89,21 @@ border-radius:12px;
 margin-bottom:25px;
 }
 
+.timeline{
+border-left:3px solid #2563eb;
+padding-left:20px;
+}
+
+.timeline-item{
+margin-bottom:30px;
+}
+
 .skills{
 margin-top:20px;
 }
 
 .skill{
 margin-bottom:18px;
-}
-
-.skill-title{
-margin-bottom:6px;
 }
 
 .skill-bar{
@@ -96,51 +116,23 @@ overflow:hidden;
 .skill-fill{
 height:10px;
 background:#2563eb;
-width:0;
-transition:1.5s;
 }
 
-.timeline{
-border-left:3px solid #2563eb;
-padding-left:20px;
-}
-
-.timeline-item{
-margin-bottom:30px;
-}
-
-.gallery{
+.grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
 }
 
-.gallery img{
-width:100%;
-border-radius:10px;
-cursor:pointer;
-transition:0.3s;
+.reveal{
+opacity:0;
+transform:translateY(40px);
+transition:1s;
 }
 
-.gallery img:hover{
-transform:scale(1.05);
-}
-
-.popup{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.9);
-display:none;
-justify-content:center;
-align-items:center;
-}
-
-.popup img{
-max-width:80%;
-border-radius:10px;
+.reveal.active{
+opacity:1;
+transform:translateY(0);
 }
 
 .toggle{
@@ -167,17 +159,6 @@ text-decoration:none;
 font-weight:bold;
 }
 
-.reveal{
-opacity:0;
-transform:translateY(60px) rotateX(15deg);
-transition:1s;
-}
-
-.reveal.active{
-opacity:1;
-transform:translateY(0) rotateX(0);
-}
-
 footer{
 text-align:center;
 padding:30px;
@@ -200,9 +181,7 @@ background:#020617;
 
 <p>General Affair Staff | Administration | Technical Support</p>
 
-<br>
-
-<a href="CV_Ari_Ardiyansyah.pdf" download style="background:#2563eb;padding:10px 16px;border-radius:6px;color:white;text-decoration:none;">Download CV</a>
+<a class="btn" href="CV_Ari_Ardiyansyah.pdf" download>Download CV</a>
 
 </header>
 
@@ -211,21 +190,26 @@ background:#020617;
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
 <a href="#experience">Experience</a>
-<a href="#portfolio">Projects</a>
+<a href="#achievements">Achievements</a>
+<a href="#tools">Tools</a>
+<a href="#education">Education</a>
+<a href="#certifications">Certifications</a>
 <a href="#contact">Contact</a>
 
 </nav>
 
 <section id="about" class="reveal">
 
-<h2>About Me</h2>
+<h2>Professional Summary</h2>
 
 <div class="card">
 
 <p>
+Saya adalah profesional dengan pengalaman kerja lintas industri seperti manufaktur, pendidikan, retail dan administrasi operasional perusahaan. Memiliki latar belakang pendidikan Teknik Informatika dari Universitas Pamulang dengan kemampuan dalam pengelolaan operasional perusahaan, administrasi dokumen, pengelolaan fasilitas kantor serta koordinasi vendor.
+</p>
 
-Saya adalah profesional yang memiliki pengalaman di berbagai industri seperti manufaktur, pendidikan, retail dan administrasi operasional perusahaan. Dengan latar belakang pendidikan Teknik Informatika dari Universitas Pamulang, saya memiliki kemampuan dalam pengelolaan operasional perusahaan, pengelolaan fasilitas kantor, koordinasi vendor, serta pengelolaan administrasi perusahaan.
-
+<p>
+Terbiasa bekerja secara sistematis, mampu bekerja secara mandiri maupun dalam tim, serta memiliki kemampuan komunikasi yang baik dalam mendukung kegiatan operasional perusahaan.
 </p>
 
 </div>
@@ -234,27 +218,27 @@ Saya adalah profesional yang memiliki pengalaman di berbagai industri seperti ma
 
 <section id="skills" class="reveal">
 
-<h2>Skills</h2>
+<h2>Professional Skills</h2>
 
 <div class="skills">
 
 <div class="skill">
-<div class="skill-title">Microsoft Office</div>
+Microsoft Office
 <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
 </div>
 
 <div class="skill">
-<div class="skill-title">Administration</div>
+Administration Management
 <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
 </div>
 
 <div class="skill">
-<div class="skill-title">Facility Management</div>
+Facility Management
 <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
 </div>
 
 <div class="skill">
-<div class="skill-title">Adobe Photoshop</div>
+Adobe Photoshop
 <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
 </div>
 
@@ -270,40 +254,98 @@ Saya adalah profesional yang memiliki pengalaman di berbagai industri seperti ma
 
 <div class="timeline-item">
 <h3>2024 - Present</h3>
-<p>General Affair Staff – PT Unitama Sari Mas</p>
+<p><b>General Affair Staff</b> – PT Unitama Sari Mas</p>
 </div>
 
 <div class="timeline-item">
 <h3>2023</h3>
-<p>Admin Sales Order – PT Suparma Tbk</p>
+<p><b>Admin Sales Order</b> – PT Suparma Tbk</p>
 </div>
 
 <div class="timeline-item">
 <h3>2023</h3>
-<p>Business Development Project – PT Food Station Tjipinang Jaya</p>
+<p><b>Business Development Project</b> – PT Food Station Tjipinang Jaya</p>
 </div>
 
 <div class="timeline-item">
 <h3>2018 - 2023</h3>
-<p>Teacher & Technician – Yayasan Bhara Trikora</p>
+<p><b>Teacher & Technician</b> – Yayasan Bhara Trikora</p>
 </div>
 
 </div>
 
 </section>
 
-<section id="portfolio" class="reveal">
+<section id="achievements" class="reveal">
 
-<h2>Project Gallery</h2>
+<h2>Key Achievements</h2>
 
-<div class="gallery">
+<div class="grid">
 
-<img src="project1.jpg" onclick="openPopup(this)">
-<img src="project2.jpg" onclick="openPopup(this)">
-<img src="project3.jpg" onclick="openPopup(this)">
-<img src="project4.jpg" onclick="openPopup(this)">
-<img src="project5.jpg" onclick="openPopup(this)">
-<img src="project6.jpg" onclick="openPopup(this)">
+<div class="card">
+Facility Management & Vendor Coordination
+</div>
+
+<div class="card">
+Operational Administration Support
+</div>
+
+<div class="card">
+Office Facility Maintenance
+</div>
+
+<div class="card">
+Asset & Document Management
+</div>
+
+</div>
+
+</section>
+
+<section id="tools" class="reveal">
+
+<h2>Tools & Software</h2>
+
+<div class="grid">
+
+<div class="card">Microsoft Office</div>
+<div class="card">Microsoft Excel</div>
+<div class="card">Microsoft Word</div>
+<div class="card">Google Workspace</div>
+<div class="card">Adobe Photoshop</div>
+
+</div>
+
+</section>
+
+<section id="education" class="reveal">
+
+<h2>Education</h2>
+
+<div class="card">
+
+<p><b>Universitas Pamulang</b></p>
+<p>Sarjana Teknik Informatika</p>
+<p>GPA : 3.18</p>
+
+</div>
+
+</section>
+
+<section id="certifications" class="reveal">
+
+<h2>Certifications</h2>
+
+<div class="card">
+
+<ul>
+
+<li>BNSP – Engine Tune Up</li>
+<li>BNSP – Brake System</li>
+<li>BNSP – Programming</li>
+<li>English Certification – Universitas Pamulang</li>
+
+</ul>
 
 </div>
 
@@ -316,9 +358,7 @@ Saya adalah profesional yang memiliki pengalaman di berbagai industri seperti ma
 <div class="card">
 
 <p>Phone : 0882-1169-9767</p>
-
 <p>Email : ariardiansyah34@gmail.com</p>
-
 <p>LinkedIn : linkedin.com/in/ari-ardiyansyah</p>
 
 </div>
@@ -333,35 +373,22 @@ Saya adalah profesional yang memiliki pengalaman di berbagai industri seperti ma
 
 <a class="whatsapp" href="https://wa.me/6288211699767">WhatsApp</a>
 
-<div class="popup" id="popup" onclick="closePopup()">
-<img id="popup-img">
-</div>
-
 <script>
 
 function toggleMode(){
 document.body.classList.toggle("light");
 }
 
-function openPopup(img){
-document.getElementById("popup").style.display="flex";
-document.getElementById("popup-img").src=img.src;
-}
-
-function closePopup(){
-document.getElementById("popup").style.display="none";
-}
-
 function reveal(){
+
 let reveals=document.querySelectorAll(".reveal");
 
 for(let i=0;i<reveals.length;i++){
 
 let windowHeight=window.innerHeight;
 let elementTop=reveals[i].getBoundingClientRect().top;
-let elementVisible=100;
 
-if(elementTop<windowHeight-elementVisible){
+if(elementTop<windowHeight-100){
 
 reveals[i].classList.add("active");
 
