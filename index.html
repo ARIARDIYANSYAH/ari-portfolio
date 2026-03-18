@@ -334,5 +334,20 @@ font-weight:bold;
 <p>© 2026 Ari Ardiyansyah</p>
 </footer>
 
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+window.toggleMenu = function(){
+const nav = document.getElementById("navMenu");
+nav.classList.toggle("active");
+}
+
+window.toggleMode = function(){
+document.body.classList.toggle("light-mode");
+}
+
+});
+</script>
+
 </body>
 </html>
