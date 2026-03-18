@@ -32,6 +32,50 @@ text-decoration: none;
 #certificate a:hover {
 color: #38bdf8;
 }
+  /* RESPONSIVE */
+@media(max-width:768px){
+nav{flex-wrap:wrap;gap:10px}
+header{padding:30px}
+header img{width:120px}
+.company{flex-direction:column;align-items:flex-start}
+}
+
+/* LIGHT MODE */
+.light-mode{
+background:#f1f5f9;
+color:#0f172a;
+}
+
+.light-mode .card{
+background:#e2e8f0;
+}
+
+.light-mode nav{
+background:#cbd5e1;
+}
+
+.light-mode footer{
+background:#cbd5e1;
+}
+
+.light-mode a{
+color:#0f172a;
+}
+
+/* TOMBOL TOGGLE */
+.toggle-btn{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#2563eb;
+color:white;
+border:none;
+padding:12px 15px;
+border-radius:50%;
+cursor:pointer;
+font-size:18px;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
 </style>
 </head>
 
