@@ -75,10 +75,14 @@ font-weight:bold;
 <img src="profile.jpg">
 <h1>Ari Ardiyansyah</h1>
 <p>General Affair | Administration | Technical Support</p>
-<a href="dokumen/CV_Ari_Ardiyansyah.pdf.pdf" download><button>Download CV</button></a>
+<a href="CV_Ari_Ardiyansyah.pdf.pdf" download><button>Download CV</button></a>
+<br><br>
+<button onclick="toggleMode()">🌙 / ☀️ Mode</button>
 </header>
 
-<nav>
+<div id="menuToggle" onclick="toggleMenu()">☰ Menu</div>
+
+<nav id="navMenu">
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
 <a href="#experience">Experience</a>
